@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可贴 App - 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #faf7f2 0%, #f0ebe3 100%);
+            color: #2c2c2c;
+            line-height: 1.8;
+            padding: 24px 16px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 32px 20px;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(12px);
+            border-radius: 24px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #c45a3c;
+            margin-bottom: 8px;
+        }
+        .header .subtitle {
+            font-size: 15px;
+            color: #888;
+            font-weight: 600;
+        }
+        .section {
+            background: rgba(255,255,255,0.65);
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            padding: 24px 22px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+        }
+        .section h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #c45a3c;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(196,90,60,0.12);
+        }
+        .section h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #444;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        .section p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .section ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .section li {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #444;
+        }
+        .highlight {
+            background: rgba(196,90,60,0.08);
+            border-left: 3px solid #c45a3c;
+            padding: 12px 16px;
+            border-radius: 0 12px 12px 0;
+            margin: 12px 0;
+        }
+        .highlight p {
+            color: #555;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 13px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>可贴 App 隐私政策</h1>
+            <div class="subtitle">生效日期：2025 年 5 月 10 日</div>
+        </div>
+
+        <div class="section">
+            <h2>概述</h2>
+            <p>可贴（以下简称"本应用"）由独立开发者开发并运营。我们高度重视您的隐私，本隐私政策旨在说明本应用如何处理您的个人信息。</p>
+            <div class="highlight">
+                <p>本应用的核心设计原则：照片处理、抠图、色调分析和文字识别均在您的设备本地完成，不会上传至任何第三方服务器。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>信息收集</h2>
+            <h3>我们收集的信息</h3>
+            <p>本应用不要求您注册账号，不收集您的姓名、邮箱、电话号码等个人身份信息。</p>
+
+            <h3>设备本地处理的信息</h3>
+            <p>以下信息仅在您的设备本地处理，不会发送到任何服务器：</p>
+            <ul>
+                <li><strong>照片内容</strong>：您选择导入的照片仅用于本地抠图、色调分析和文字识别，处理结果保存在设备本地。</li>
+                <li><strong>照片元数据</strong>：包括拍摄时间、地理位置（如照片中包含）。位置名称通过 iOS 原生 CLGeocoder 在设备端反查，不会上传。</li>
+                <li><strong>色调分析结果</strong>：照片的主色调分析完全在设备本地完成。</li>
+                <li><strong>文字识别结果</strong>：从照片中提取的文字通过 Apple Vision 框架在设备本地识别，不会上传。</li>
+            </ul>
+
+            <h3>应用内购买信息</h3>
+            <p>高级版购买状态由 Apple StoreKit 返回，本应用不会收集您的 Apple ID 密码、支付卡号或系统账号凭证。购买记录由 Apple 管理，本应用仅获取购买验证结果。</p>
+        </div>
+
+        <div class="section">
+            <h2>信息存储</h2>
+            <p>所有贴纸数据、游戏记录、设置偏好均存储在您的设备本地（SwiftData 数据库和 UserDefaults）。本应用不维护任何远程服务器或数据库。</p>
+            <p>导出的海报和视频保存在您的系统相册中，由 iOS 系统权限管理控制访问。</p>
+        </div>
+
+        <div class="section">
+            <h2>信息共享</h2>
+            <p>本应用不会将您的个人信息出售、出租或共享给任何第三方。</p>
+            <p>分享功能（如将海报导出至系统分享面板）由您主动触发，分享内容完全由您控制。</p>
+        </div>
+
+        <div class="section">
+            <h2>权限使用</h2>
+            <ul>
+                <li><strong>相册访问</strong>：用于导入照片和保存导出内容，仅在您操作时请求。</li>
+                <li><strong>相机</strong>：用于拍摄照片制作贴纸，仅在您操作时请求。</li>
+                <li><strong>定位服务</strong>：用于反查照片拍摄地点的中文名称，可在设置中关闭。</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>儿童隐私</h2>
+            <p>本应用不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。如果您发现您的孩子未经授权使用了本应用，请联系我们。</p>
+        </div>
+
+        <div class="section">
+            <h2>数据删除</h2>
+            <p>您可以随时通过以下方式删除数据：</p>
+            <ul>
+                <li>在应用内删除单个贴纸或清空所有数据</li>
+                <li>卸载应用将删除所有本地数据</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>政策更新</h2>
+            <p>我们可能会不时更新本隐私政策。更新后的政策将在本页面发布，并修改页面顶部的生效日期。重大变更将通过应用内通知或其他适当方式告知您。</p>
+            <p>如果后续接入云同步、账号系统或更多分享渠道，我们会在此补充说明并保持与实际行为一致。</p>
+        </div>
+
+        <div class="section">
+            <h2>联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
+            <p>GitHub: <a href="https://github.com/gaawal/PINPIN" style="color: #c45a3c;">gaawal/PINPIN</a></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 可贴 App. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
